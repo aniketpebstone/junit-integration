@@ -38,7 +38,6 @@ public class ServiceTest {
 	@Test
 	public void whenValidName_thenCustomerShouldBeFound() {
 	    String lastName = "Paranjpe";
-	    System.out.println("test");
 	    List<Customer> found = customerService.findByLastName(lastName);
 	     assertThat(((Customer)found.get(0)).getLastName()).isEqualTo(lastName);
 	 }
