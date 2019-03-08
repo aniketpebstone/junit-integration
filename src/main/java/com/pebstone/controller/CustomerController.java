@@ -23,7 +23,7 @@ public class CustomerController {
 	@RequestMapping("/name")
     public List<Customer> getCustomers(@RequestParam(value="lastName", defaultValue="Bauer") String name) {
         List<Customer> customers=CustomerService.findByLastName(name);
-        System.out.println("Customers:"+customers);
+        System.out.println("Customers1:"+customers);
         return customers;
     }	
 }
