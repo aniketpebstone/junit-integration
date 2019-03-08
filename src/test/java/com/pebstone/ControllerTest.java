@@ -39,7 +39,7 @@ public class ControllerTest {
     public void givenCustomer_whenGetCustomers_thenReturnJsonArray()
       throws Exception {
          
-    	Customer aniket = new Customer("Aniket","Paranjpe");
+    	Customer aniket = new Customer("Anike","Paranjpe");
         List<Customer> allCustomers = Arrays.asList(aniket);
      
         when(service.findByLastName(aniket.getLastName())).thenReturn(allCustomers);
